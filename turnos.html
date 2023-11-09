@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=>, initial-scale=1.0">
+    <!--Librearia de iconos-->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+     <!--Bootstrap-->
+     <link rel="stylesheet" href="./css/bootstrap.css">
+    <!--Hoja de estilos-->
+    <link rel="stylesheet" href="./css/style.css">
+    <title>Alvares Estudio Juridico</title>
+</head>
+<body>
+    <header id="arriba">
+        <nav> 
+            <nav class="navbar navbar-expand-lg">
+                <div class="container-fluid">
+                  <a class="navbar-brand" href="./index.html">Estudio Jurídico Alvares</a>
+                  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                  </button>
+    
+                  <div class="collapse navbar-collapse navegador" id="navbarNav">
+                    <ul class="navbar-nav">
+                      <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="./index.html" class="inicio1">Inicio</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="./especialidades.html">Especialidades</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="./turnos.html">Turnos</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="./ubicacion.html">Ubicación</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="./contacto.html">Contactanos</a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </nav>
+        </nav>
+    </header>
+
+    <section class="turnos">
+        <h2 clas="tituloturno"> Sacá tu turno con nosotros </h2>
+        <p class="textoturno">Elige la rama que necesitas y sacá tu turno con un especialista en esa área para resolver tus conflictos legales.</p>
+    
+    </section>
+
+    <section >
+        
+        <h3 class="bsformulario">Elige la rama del derecho que necesitas</h3>
+           <!--sección para completar datos con Bootstrap-->
+
+        <select class="form-select form-select-sm formulario1" aria-label="Small select example">
+            <option selected>Elige tu rama del derecho</option>
+            <option value="1">Derecho de Inmuebles</option>
+            <option value="2">Derecho Penal</option>
+            <option value="3">Derecho Civil</option>
+            <option value="4">Derecho Laboral</option>
+            <option value="5">Ciudadanía</option>
+            <option value="6">Accidentes de tránsito </option>
+          </select> 
+
+        <form action="" method="post" enctype="" class="informacion">
+            
+         <label for="nombre">Nombre completo</label>
+         <input type="text" id="nombre" name="nombre" placeholder="Nombre y apellido" required/>
+         <label for="cel">Celular</label>
+         <input type="number" id="cel" name="cel" placeholder="Número de celular" required/>
+         <label for="turno">Reservá tu turno</label>
+         <input type="date" id="turno" name="turno" placeholder="Reservá tu turno" required/>
+
+         <input type="submit" value="Enviar" class="enviarturno">
+         
+        </form>
+    </section>
+
+  <!--Bootstrap js-->
+<script src="./js/bootstrap.js"></script>
+
+</body>
+</html>
