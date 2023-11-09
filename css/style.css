@@ -41,10 +41,6 @@ justify-content: right;
 }
 /*pseudoclases*/
 
-.nav_item:hover{
-    background-color:#7C2343;
-}
-
 a{
     font-family: 'Bitter', serif;
     font-weight: 700;
@@ -203,6 +199,11 @@ label{
     margin-left: 20rem;
 }
 
+.enviarturno:hover{
+    background-color: #df6c29;
+    color: #F1E7C4;
+}
+
 
 
 /*Parte de inicio*/
@@ -236,6 +237,11 @@ label{
     z-index: -1;
 }
 
+.botonwp:hover{
+    background-color: #df6c29;
+    color: #F1E7C4;
+}
+
 .botonturnos{
     border-radius: 1rem;
     font-size: 2rem;
@@ -262,6 +268,11 @@ label{
     ;
     filter: blur(15px);
     z-index: -1;
+}
+
+.botonturnos:hover{
+    background-color: #df6c29;
+    color: #F1E7C4;
 }
 
 .botonconoce {
@@ -293,6 +304,10 @@ label{
     z-index: -1;
 }
 
+.botonconoce:hover{
+    background-color: #df6c29;
+    color: #F1E7C4;
+}
 
 
 .imagen{
@@ -317,7 +332,11 @@ label{
     width: 11%;
     font-family: 'Bitter', serif;
 }
-
+.enviar:hover{
+    background-color: #df6c29;
+    color: #F1E7C4;
+  
+}
 /*termina inicio*/
 
 .iconos{
