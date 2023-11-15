@@ -1,0 +1,43 @@
+@import "./partials/fuente";
+@import "./partials/variables";
+
+*{
+    margin: 0; padding: 0; box-sizing: border-box;
+}
+
+body{
+    /*background-color: black;*/
+}
+
+a{
+    font-family: $fuente;
+    font-weight: 700;
+    text-decoration: none;
+}
+
+#arriba{
+    .navbar{background-color: $color-resaltar;
+        .navbar-text, .navbar-brand, .nav-link{
+            color: #7C2343
+        }
+        .navbar-brand{
+            &:hover{
+                color: #F1E7C4;
+            }
+        }
+        #navbarNav{
+            justify-content: right;
+                font-size: 1.5rem;
+    
+             .nav-item{
+                    margin-left: 2rem;
+                    &:hover{
+                        background-color: #F1E7C4;
+                        font-weight: 700;
+                    }
+                }
+            }
+    }
+}
+
+@import "./partials/queris"

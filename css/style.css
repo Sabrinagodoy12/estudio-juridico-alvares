@@ -1,3 +1,41 @@
+@import url("https://fonts.googleapis.com/css2?family=Bitter:wght@300;400;700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 
+body {
+  /*background-color: black;*/
+}
+
+a {
+  font-family: "Bitter", serif;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+#arriba .navbar {
+  background-color: #F6975F;
+}
+#arriba .navbar .navbar-text, #arriba .navbar .navbar-brand, #arriba .navbar .nav-link {
+  color: #7C2343;
+}
+#arriba .navbar .navbar-brand:hover {
+  color: #F1E7C4;
+}
+#arriba .navbar #navbarNav {
+  justify-content: right;
+  font-size: 1.5rem;
+}
+#arriba .navbar #navbarNav .nav-item {
+  margin-left: 2rem;
+}
+#arriba .navbar #navbarNav .nav-item:hover {
+  background-color: #F1E7C4;
+  font-weight: 700;
+}
+
+/*mis reglas de mediaqueries*/
 
 /*# sourceMappingURL=style.css.map */
