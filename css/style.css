@@ -81,7 +81,6 @@ h6{
 
 p{
     color: #F1E7C4;
-    /*margin: 2% 55% 0% 5%;*/
     font-size: 2rem;
 }
 
@@ -127,9 +126,7 @@ h4{
     margin: 1% 5% 0% 70%
 }
 
-.mapa{
-    margin: 2% 50% 0% 40%;
-}
+
 
 /*para pedir turno*/
 
@@ -204,8 +201,6 @@ label{
     color: #F1E7C4;
 }
 
-
-
 /*Parte de inicio*/
 
 .botonwp{
@@ -219,7 +214,6 @@ label{
     height: 6rem;
     padding: 20px 50px;
     color: #7C2343;
-    
 }
 
 .botonwp::after{
@@ -337,6 +331,7 @@ label{
     color: #F1E7C4;
   
 }
+
 /*termina inicio*/
 
 .iconos{
@@ -375,9 +370,6 @@ font-weight: 600;
     margin-left: 6rem;
 }
 
-
-
-
 .sacatuturno{
     background-color:#F6975F;
     border-radius: 1rem;
@@ -406,6 +398,7 @@ h3{
 
 
 /*footer*/
+
 footer{
     position: absolute;
     width: 100%;
@@ -584,7 +577,7 @@ margin-top: 1rem;
 
 }
 
-@media (max-width:390px){
+@media (max-width:700px){
 
     .ubicacion-item{
         font-size: 3rem;
