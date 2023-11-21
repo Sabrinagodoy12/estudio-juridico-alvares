@@ -12,6 +12,7 @@
     <title>Alvares Estudio Juridico</title>
 </head>
 <body>
+   <!--Inicia menu Nav-->
     <header id="arriba">
         <nav> 
             <nav class="navbar navbar-expand-lg">
@@ -46,7 +47,7 @@
     </header>
 
     <section class="turnos">
-        <h2 clas="tituloturno"> Sacá tu turno con nosotros </h2>
+        <h1 class="titulo-5"> Sacá tu turno con nosotros </h1>
         <p class="textoturno">Elige la rama que necesitas y sacá tu turno con un especialista en esa área para resolver tus conflictos legales.</p>
     
     </section>
@@ -56,7 +57,7 @@
         <h3 class="bsformulario">Elige la rama del derecho que necesitas</h3>
            <!--sección para completar datos con Bootstrap-->
 
-        <select class="form-select form-select-sm formulario1" aria-label="Small select example">
+        <select class="form-select form-select-sm formulario1" aria-label="Small select example" required>
             <option selected>Elige tu rama del derecho</option>
             <option value="1">Derecho de Inmuebles</option>
             <option value="2">Derecho Penal</option>
@@ -72,14 +73,40 @@
          <input type="text" id="nombre" name="nombre" placeholder="Nombre y apellido" required/>
          <label for="cel">Celular</label>
          <input type="number" id="cel" name="cel" placeholder="Número de celular" required/>
-         <label for="turno">Reservá tu turno</label>
+         <label for="turno" class="turnonombre">Reservá tu turno</label>
          <input type="date" id="turno" name="turno" placeholder="Reservá tu turno" required/>
 
          <input type="submit" value="Enviar" class="enviarturno">
          
         </form>
     </section>
+<!--Inicio footer -->
 
+<footer class="container-fluid pieturnos">
+  <section class="row pie">
+
+      <div class="col pietexto">
+         <h6> <a href="./contacto.html" class="textorojo">Contactanos:</a></h6>
+          <h6> 11-6979-2642</h6>
+          <h6> Av. De Los Constituyentes 5179</h6>
+       </div>
+
+      <div class="col pieicono"> 
+          <a href="https://www.instagram.com/estudio.alvares/" target="_blank" class="ig">
+       <img src="./img/iconos/instagram.svg" alt="Logo de Instagram" class="instagram ">
+      </a>
+       </div>
+
+      <div class="col pieicono"> 
+        <a href="https://wa.me/91169792642" target="_blank" class="wp"> 
+          <img src="./img/iconos/whatsapp.svg" alt="Logo de Whatsapp" class="whatsapp">
+      </a>  
+  </div>
+
+
+  </section>
+
+</footer>
   <!--Bootstrap js-->
 <script src="./js/bootstrap.js"></script>
 
