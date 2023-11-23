@@ -70,27 +70,27 @@ h1 {
 }
 
 p::selection {
-  background-color: #db6a29;
+  background-color: #F6975F;
   color: #F1E7C4;
 }
 
 h4::selection {
-  background-color: #db6a29;
+  background-color: #F6975F;
   color: #F1E7C4;
 }
 
 h2::selection {
-  background-color: #db6a29;
+  background-color: #F6975F;
   color: #F1E7C4;
 }
 
 h1::selection {
-  background-color: #db6a29;
+  background-color: #F6975F;
   color: #F1E7C4;
 }
 
 span::selection {
-  background-color: #db6a29;
+  background-color: #F6975F;
   color: #F1E7C4;
 }
 
@@ -229,7 +229,7 @@ footer .pieiconomobile {
   transition: all 0.5s;
 }
 .ramas .rama1 .sacatuturno:hover {
-  background-color: #df6c29;
+  background-color: #F6975F;
   color: #F1E7C4;
   transform: scale(1.2);
 }
@@ -358,7 +358,7 @@ footer .pieiconomobile {
   width: 10rem;
 }
 .contacto .enviar:hover {
-  background-color: #df6c29;
+  background-color: #F6975F;
   color: #F1E7C4;
 }
 
@@ -391,7 +391,7 @@ footer .pieiconomobile {
   z-index: -1;
 }
 .boton:hover, .botonconoce:hover, .botonturnos:hover {
-  background-color: #df6c29;
+  background-color: #F6975F;
   color: #F1E7C4;
   transform: scale(1.1);
 }
