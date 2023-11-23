@@ -7,6 +7,7 @@
 font-size: $size;
 }
 
+
 *{
     margin: 0; padding: 0; box-sizing: border-box;
 }
@@ -14,6 +15,7 @@ font-size: $size;
 body{
     background-color: black;
     font-family: $fuente;
+    background-image: linear-gradient(145deg, (#7C2343 , black , black , black));
 }
 
 p{
@@ -62,10 +64,6 @@ span::selection{
     background-color: #db6a29;
     color: #F1E7C4;
 }
-.titulo-5{
-    margin-left: 5rem;
-    margin-top: 5rem;
-}
 
 /*Barra de navegación*/ 
 
@@ -96,7 +94,6 @@ span::selection{
 }
 
 /*Página Inicio*/
-
 .todoinicio{
 
     .titulo-7{
@@ -112,7 +109,7 @@ p{
     font-size: 2rem;
 }
 .nosotros{
-    margin-top: -50rem;
+    margin-top: -30rem;
 }
 
 .somos, #texto{
@@ -133,15 +130,17 @@ h4{
 }
 
 .imagen{
-    margin-top: -50%;
+    margin-top: -30rem;
+    margin-left: 60rem;
 }
+
 }
 
 /*footer*/
 
 footer{
     color: #7C2343;
-    background: #F6975F;
+    background: $color-resaltar;
     height: 6rem;
     width: 100%;
     margin-top: 18rem;
@@ -171,15 +170,17 @@ footer{
       }
 
     }
-
+.pieiconomobile{
+    display: none;
+}
 }
 
 .piemasarriba{
-    margin-top: 4rem;
+    margin-top: 10rem;
 }
 
 .pieturnos{
-    margin-top: 8rem;
+    margin-top: 15rem;
 }
 
 /*Página especialidades*/
@@ -196,20 +197,19 @@ footer{
         margin-top: 1rem;
     }
     .rama1{
-        width: 28rem;
-        height: 12rem;
+      
         color: $color-texto;
         border: $color-resaltar 3px solid;
         border-radius: 5%;
         margin: 3rem;
-        margin-left: 6rem;
+        transition: all .5s;
+        &:hover{
+            transform: scale(1.05);
+        }
+       
        
         h3{
             margin-top: 4rem;
-        }
-
-        h3{ 
-            font-size: 1.8rem;
         }
 
         .sacatuturno{
@@ -223,15 +223,13 @@ footer{
             font-weight: 600;
             margin-top: 3rem;
             color: #7C2343;
+            transition: all .5s;
             &:hover{
                 background-color: #df6c29;
                 color: #F1E7C4;
+                transform: scale(1.2);
             }
-        }
-        
-      
-        
-        
+        }     
         
     }
 }
@@ -251,9 +249,10 @@ footer{
 
 .formularios{
     .bsformulario{
-        color: #F1E7C4;
+        color: $color-resaltar;
         margin-left: 5rem;
         margin-top: 3rem;
+        font-size: 2rem;
 
     }
     
@@ -266,7 +265,7 @@ footer{
     .informacion{
         display: flex;
         flex-direction: column;
-        color: #F1E7C4;
+        color: $color-resaltar;
        margin-left: 3rem;
         font-size: 2rem;
 
@@ -294,16 +293,15 @@ footer{
             
         }
         .turnonombre{
-            margin-top: -10rem;
-            margin-left: 47rem;
+            margin-top: 2rem;
         }
     
         .enviarturno{
             width: 10rem;
             height: 2rem;
             color: #7C2343;
-            background-color: #F6975F;
-            border-color: #F1E7C4;
+            background-color: $color-resaltar;
+            border-color: $color-texto;
             border-radius: solid 1px;
             font-family: 'Bitter', serif;
             font-size: 1rem;
@@ -312,8 +310,8 @@ footer{
             margin-left: 67rem;
 
             &:hover{
-                background-color: #df6c29;
-    color: #F1E7C4;
+                background-color: $color-resaltar;
+    color: $color-texto;
             }
         }
     }
@@ -341,6 +339,7 @@ footer{
         margin-top: 1rem;
     margin-right: 5rem;
         grid-column: 3/5;
+
     }
     
     .ubicacion-item3{
@@ -365,26 +364,18 @@ footer{
 
 .contacto{
     .mb-3{
-        margin-left: 5rem;
         margin-top: 2rem;
 
         .form-label, .form-label2, .form-label3{
             color: #F1E7C4;
-            font-size: 2rem;
         }
-
-        #exampleFormControlInput1{
-            width: 30rem;
-            }
             
             #exampleFormControlTextarea1{
-                width: 50rem;
-                height: 10rem;
+                height: 15rem;
             }
     }
 
     .enviar{
-        margin-left: 45rem;
         color: #7C2343;
         background-color: #F6975F;
         border-color: #F1E7C4;
@@ -414,6 +405,7 @@ footer{
     height: 6rem;
     color: #7C2343;
     cursor: pointer;
+    transition: all .5s;
 
     &::after{
         position: absolute;
@@ -428,10 +420,12 @@ footer{
         ;
         filter: blur(15px);
         z-index: -1;
+       
     }
     &:hover{
         background-color: #df6c29;
         color: #F1E7C4;
+        transform: scale(1.1);
     }
 }
 
@@ -439,6 +433,7 @@ footer{
     @extend .boton;
     margin: 5% 20% 0% 25%;
      padding: 20px 20px;
+   
 }
 
 .botonconoce{

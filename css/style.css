@@ -1,6 +1,10 @@
 @charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Bitter:wght@300;400;700&display=swap");
 /*condicionales*/
+.navbar {
+  background-color: #F6975F;
+}
+
 .titulo-1 {
   font-size: 1rem;
 }
@@ -38,6 +42,7 @@
 body {
   background-color: black;
   font-family: "Bitter", serif;
+  background-image: linear-gradient(145deg, #7C2343, black, black, black);
 }
 
 p {
@@ -89,11 +94,6 @@ span::selection {
   color: #F1E7C4;
 }
 
-.titulo-5 {
-  margin-left: 5rem;
-  margin-top: 5rem;
-}
-
 /*Barra de navegación*/
 #arriba .navbar {
   background-color: #F6975F;
@@ -128,7 +128,7 @@ span::selection {
   font-size: 2rem;
 }
 .todoinicio .nosotros {
-  margin-top: -50rem;
+  margin-top: -30rem;
 }
 .todoinicio .somos, .todoinicio #texto {
   margin: 2% 55% 0% 5%;
@@ -145,7 +145,8 @@ span::selection {
   margin: 1% 5% 0% 70%;
 }
 .todoinicio .imagen {
-  margin-top: -50%;
+  margin-top: -30rem;
+  margin-left: 60rem;
 }
 
 /*footer*/
@@ -177,13 +178,16 @@ footer .pieicono .whatsapp, footer .pieicono .instagram {
 footer .pieicono .instagram {
   margin-left: 60rem;
 }
+footer .pieiconomobile {
+  display: none;
+}
 
 .piemasarriba {
-  margin-top: 4rem;
+  margin-top: 10rem;
 }
 
 .pieturnos {
-  margin-top: 8rem;
+  margin-top: 15rem;
 }
 
 /*Página especialidades*/
@@ -199,19 +203,17 @@ footer .pieicono .instagram {
   margin-top: 1rem;
 }
 .ramas .rama1 {
-  width: 28rem;
-  height: 12rem;
   color: #F1E7C4;
   border: #F6975F 3px solid;
   border-radius: 5%;
   margin: 3rem;
-  margin-left: 6rem;
+  transition: all 0.5s;
+}
+.ramas .rama1:hover {
+  transform: scale(1.05);
 }
 .ramas .rama1 h3 {
   margin-top: 4rem;
-}
-.ramas .rama1 h3 {
-  font-size: 1.8rem;
 }
 .ramas .rama1 .sacatuturno {
   background-color: #F6975F;
@@ -224,10 +226,12 @@ footer .pieicono .instagram {
   font-weight: 600;
   margin-top: 3rem;
   color: #7C2343;
+  transition: all 0.5s;
 }
 .ramas .rama1 .sacatuturno:hover {
   background-color: #df6c29;
   color: #F1E7C4;
+  transform: scale(1.2);
 }
 
 /*Página turnos*/
@@ -242,9 +246,10 @@ footer .pieicono .instagram {
 }
 
 .formularios .bsformulario {
-  color: #F1E7C4;
+  color: #F6975F;
   margin-left: 5rem;
   margin-top: 3rem;
+  font-size: 2rem;
 }
 .formularios .formulario1 {
   width: 30rem;
@@ -255,7 +260,7 @@ footer .pieicono .instagram {
 .formularios .informacion {
   display: flex;
   flex-direction: column;
-  color: #F1E7C4;
+  color: #F6975F;
   margin-left: 3rem;
   font-size: 2rem;
 }
@@ -280,8 +285,7 @@ footer .pieicono .instagram {
   margin-left: 47rem;
 }
 .formularios .informacion .turnonombre {
-  margin-top: -10rem;
-  margin-left: 47rem;
+  margin-top: 2rem;
 }
 .formularios .informacion .enviarturno {
   width: 10rem;
@@ -297,7 +301,7 @@ footer .pieicono .instagram {
   margin-left: 67rem;
 }
 .formularios .informacion .enviarturno:hover {
-  background-color: #df6c29;
+  background-color: #F6975F;
   color: #F1E7C4;
 }
 
@@ -335,22 +339,15 @@ footer .pieicono .instagram {
 
 /*Página Contacto*/
 .contacto .mb-3 {
-  margin-left: 5rem;
   margin-top: 2rem;
 }
 .contacto .mb-3 .form-label, .contacto .mb-3 .form-label2, .contacto .mb-3 .form-label3 {
   color: #F1E7C4;
-  font-size: 2rem;
-}
-.contacto .mb-3 #exampleFormControlInput1 {
-  width: 30rem;
 }
 .contacto .mb-3 #exampleFormControlTextarea1 {
-  width: 50rem;
-  height: 10rem;
+  height: 15rem;
 }
 .contacto .enviar {
-  margin-left: 45rem;
   color: #7C2343;
   background-color: #F6975F;
   border-color: #F1E7C4;
@@ -378,6 +375,7 @@ footer .pieicono .instagram {
   height: 6rem;
   color: #7C2343;
   cursor: pointer;
+  transition: all 0.5s;
 }
 .boton::after, .botonconoce::after, .botonturnos::after {
   position: absolute;
@@ -395,6 +393,7 @@ footer .pieicono .instagram {
 .boton:hover, .botonconoce:hover, .botonturnos:hover {
   background-color: #df6c29;
   color: #F1E7C4;
+  transform: scale(1.1);
 }
 
 .botonturnos {
@@ -410,25 +409,552 @@ footer .pieicono .instagram {
 }
 
 /*mis reglas de mediaquerys*/
-@media (max-width: 800px) {
-  .titulorama {
+/*footer y navbar responsive*/
+@media (max-width: 1625px) {
+  footer {
+    width: 100%;
+  }
+  footer .whatsapp, footer .pieicono .instagram {
+    margin-left: 10rem;
+  }
+}
+@media (max-width: 1090px) {
+  .navbar {
+    width: 100%;
+  }
+  .navbar .navbar-brand {
+    display: none;
+  }
+  footer {
+    width: 100%;
+    height: 10rem;
+  }
+}
+@media (max-width: 1020px) {
+  footer {
+    width: 100%;
+  }
+}
+@media (max-width: 720px) {
+  footer {
+    height: 15rem;
+  }
+  footer .pietexto {
     margin-left: 1rem;
   }
+  footer .instagram {
+    display: none;
+  }
+  footer .whatsapp, footer .pieicono .instagram {
+    display: none;
+  }
+  footer .pieiconomobile {
+    display: block;
+    margin-top: 0;
+    margin-left: 1rem;
+  }
+  footer .pieiconomobile .instagrammobile {
+    width: 2rem;
+    height: 2rem;
+    margin-top: 1.5rem;
+  }
+  footer .pieiconomobile .whatsappmobile {
+    margin-top: 1rem;
+    width: 2rem;
+    height: 2rem;
+  }
+}
+@media (max-width: 350px) {
+  footer {
+    height: 15rem;
+  }
+}
+/*responsive página inicio*/
+@media (max-width: 1650px) {
+  .todoinicio .imagen {
+    margin-left: 50rem;
+  }
+}
+@media (max-width: 1540px) {
+  .todoinicio .titulo-7 {
+    font-size: 5rem;
+  }
+  .todoinicio .imagen .imagenthemis {
+    margin-left: -5rem;
+    margin-top: 10rem;
+  }
+  .todoinicio .botonturnos {
+    margin-left: 25rem;
+  }
+}
+@media (max-width: 1400px) {
+  .todoinicio #texto {
+    font-size: 1.8rem;
+  }
+  .todoinicio .imagen {
+    display: none;
+  }
+  .todoinicio .nosotros {
+    margin-top: 20rem;
+    margin-left: 3rem;
+  }
+  .todoinicio .somos {
+    font-size: 1.5rem;
+  }
+}
+@media (max-width: 1200px) {
+  .todoinicio .titulo-7 {
+    font-size: 4rem;
+  }
+  .todoinicio #texto {
+    font-size: 1.5rem;
+    margin-right: 0;
+  }
+  .todoinicio .nosotros {
+    font-size: 4rem;
+  }
+  .todoinicio .somos {
+    margin-right: 5rem;
+  }
+  .todoinicio .matriculatexto {
+    margin-right: 5rem;
+  }
+  .todoinicio .botonconoce {
+    margin-left: 4rem;
+  }
+}
+@media (max-width: 870px) {
+  .todoinicio .titulo-7 {
+    margin-right: 10rem;
+  }
+  .todoinicio .botones .boton, .todoinicio .botones .botonturnos, .todoinicio .botones .botonconoce {
+    width: 15rem;
+    font-size: 1.8rem;
+    padding: 25px 35px;
+  }
+  .todoinicio .botones .botonturnos {
+    width: 15rem;
+    font-size: 1.8rem;
+    padding: 20px 5px;
+  }
+  .todoinicio .botonconoce {
+    margin-left: 2rem;
+    margin-top: 2rem;
+  }
+}
+@media (max-width: 750px) {
+  .todoinicio #texto {
+    font-size: 1.2rem;
+  }
+  .todoinicio .botonturnos {
+    margin-left: 20rem;
+  }
+  .todoinicio .nosotros {
+    margin-left: 2rem;
+  }
+  .todoinicio .somos, .todoinicio .matriculatexto {
+    font-size: 1.2rem;
+  }
+}
+@media (max-width: 680px) {
+  .todoinicio .botones .boton, .todoinicio .botones .botonturnos, .todoinicio .botones .botonconoce {
+    width: 12rem;
+    height: 4rem;
+    font-size: 1rem;
+    text-align: center;
+    padding: 5;
+  }
+  .todoinicio .titulo-7 {
+    font-size: 2.5rem;
+  }
+  .todoinicio .nosotros {
+    font-size: 2.3rem;
+  }
+  .todoinicio .botonconoce {
+    width: 12rem;
+    height: 4rem;
+    font-size: 1rem;
+  }
+}
+@media (max-width: 530px) {
+  .todoinicio .botones .boton, .todoinicio .botones .botonturnos, .todoinicio .botones .botonconoce {
+    width: 10rem;
+    padding: 1rem;
+  }
+  .todoinicio .botonturnos {
+    margin-left: 15rem;
+  }
+  .todoinicio .botonconoce {
+    padding: 0.5rem;
+  }
+  .todoinicio .titulo-7 {
+    font-size: 2rem;
+  }
+  .todoinicio .texto {
+    font-size: 1rem;
+  }
+  .todoinicio .somos {
+    font-size: 1rem;
+  }
+}
+@media (max-width: 405px) {
+  .todoinicio .botones .boton, .todoinicio .botones .botonturnos, .todoinicio .botones .botonconoce {
+    width: 8rem;
+    padding: 0.5rem;
+  }
+  .todoinicio .botonturnos {
+    margin-left: 10rem;
+  }
+  .todoinicio .titulo-7 {
+    margin-right: 0;
+  }
+  .todoinicio .somos {
+    margin-right: 0;
+  }
+  .todoinicio .matriculatexto {
+    font-size: 1rem;
+    margin-right: 0;
+  }
+}
+/*responsive página especialidades*/
+@media (max-width: 2500px) {
+  .titulo-5 {
+    margin-left: 5rem;
+    margin-top: 5rem;
+    font-size: 5rem;
+  }
+  .rama1 {
+    width: 28rem;
+    height: 12rem;
+  }
+  .rama1 h3 {
+    font-size: 1.8rem;
+  }
   .ramatexto {
+    font-size: 2rem;
+  }
+}
+@media (max-width: 750px) {
+  .titulo-5 {
+    font-size: 4rem;
+    margin-left: 0.5rem;
+  }
+  section .ramatexto {
+    font-size: 1.5rem;
+    margin-left: 0.5rem;
+  }
+  .sacatuturno {
+    margin-left: 0;
+  }
+}
+@media (max-width: 720px) {
+  .piemasarriba {
+    height: 25rem;
+  }
+}
+@media (max-width: 550px) {
+  .rama1 {
+    margin-left: 1rem;
+    width: 25rem;
+    height: 12rem;
+  }
+  .rama1 h3 {
+    font-size: 1.5rem;
+  }
+}
+@media (max-width: 480px) {
+  .ramatexto {
+    font-size: 1rem;
+  }
+  .rama1 {
+    margin-left: 1rem;
+    width: 20rem;
+    height: 12rem;
+  }
+}
+/*responsive página turnos*/
+@media (max-width: 1500px) {
+  .turnos .textoturno {
+    margin-left: 15rem;
+    margin-right: 3rem;
+  }
+  .formularios .informacion .turnonombre {
+    margin-left: 2rem;
+    margin-top: 2rem;
+  }
+  .formularios .informacion .enviarturno {
+    margin-left: 22rem;
+  }
+}
+@media (max-width: 1080px) {
+  .tituloturno {
+    margin-left: 2rem;
+  }
+  .turnos {
+    flex-direction: column;
+  }
+  .turnos .textoturno {
+    margin-top: 1rem;
+    margin-left: 2rem;
+    margin-right: 10rem;
+  }
+}
+@media (max-width: 745px) {
+  .turnos .tituloturno {
+    margin-left: 2rem;
+    font-size: 4rem;
+  }
+  .turnos .textoturno {
+    font-size: 1.5rem;
+    margin-left: 2rem;
+  }
+}
+.formularios .bsformulario {
+  margin-left: 2rem;
+}
+.formularios .formulario1 {
+  margin-left: 2rem;
+}
+.formularios .informacion {
+  margin-left: 2rem;
+}
+.formularios .informacion label {
+  margin-left: 0.3rem;
+}
+.formularios .informacion input {
+  margin-left: 0;
+}
+.formularios .informacion #turno {
+  margin-left: 0;
+}
+.formularios .informacion .turnonombre {
+  margin-left: 0rem;
+}
+.formularios .informacion .enviarturno {
+  margin-left: 20rem;
+}
+
+@media (max-width: 550px) {
+  .turnos .titulo-5 {
+    font-size: 2rem;
+  }
+  .turnos .textoturno {
+    font-size: 1rem;
+    margin-right: 1rem;
+  }
+  .formularios .bsformulario {
+    font-size: 1.5rem;
+  }
+  .formularios .formulario1 {
+    width: 25rem;
+  }
+  .formularios .informacion {
+    font-size: 1.5rem;
+  }
+  .formularios .informacion #rama, .formularios .informacion #cel, .formularios .informacion #nombre {
+    width: 25rem;
+  }
+  .formularios .informacion #turno {
+    width: 25rem;
+  }
+  .formularios .informacion .enviarturno {
+    margin-left: 15rem;
+  }
+}
+@media (max-width: 450px) {
+  .formularios .bsformulario {
+    font-size: 1.2rem;
+  }
+  .formularios .formulario1 {
+    width: 20rem;
+  }
+  .formularios .informacion {
+    font-size: 1.2rem;
+  }
+  .formularios .informacion #rama, .formularios .informacion #cel, .formularios .informacion #nombre {
+    width: 20rem;
+  }
+  .formularios .informacion #turno {
+    width: 20rem;
+  }
+  .formularios .informacion .enviarturno {
+    margin-left: 10rem;
+  }
+}
+@media (max-width: 350px) {
+  .formularios .bsformulario {
+    margin-left: 2.5rem;
+  }
+  .formularios .formulario1 {
+    margin-left: 2.5rem;
+    width: 17rem;
+  }
+  .formularios .informacion {
+    font-size: 1.2rem;
+    margin-left: 2rem;
+  }
+  .formularios .informacion #rama, .formularios .informacion #cel, .formularios .informacion #nombre {
+    width: 17rem;
+    margin-left: 0.5rem;
+  }
+  .formularios .informacion .turnonombre {
+    margin-left: 0.5rem;
+  }
+  .formularios .informacion #turno {
+    width: 17rem;
+    margin-left: 0.5rem;
+  }
+  .formularios .informacion .enviarturno {
+    margin-left: 8rem;
+  }
+}
+/*responsive página ubicación*/
+@media (max-width: 1580px) {
+  .ubicacion .ubicacion-item2 {
+    margin-top: 7rem;
+    margin-left: 5rem;
+    grid-column: 1/4;
+  }
+  .ubicacion .ubicacion-item3 {
+    grid-column: 3/5;
+    margin-left: 20rem;
+  }
+}
+@media (max-width: 1140px) {
+  .ubicacion .ubicacion-item2 {
+    font-size: 1.5rem;
+  }
+  .ubicacion .ubicacion-item3 {
+    margin-left: 25rem;
+    grid-column: 2/5;
+  }
+}
+@media (max-width: 850px) {
+  .ubicacion .ubicacion-item {
+    font-size: 4rem;
+  }
+  .ubicacion .ubicacion-item2 {
+    margin-top: 4rem;
+    font-size: 1.3rem;
+    grid-column: 1/5;
+  }
+  .ubicacion .ubicacion-item3 {
+    margin-top: 5rem;
+    grid-column: 1/5;
+  }
+  .ubicacion .ubicacion-item4 {
+    margin-top: 2.5rem;
+    padding: 2rem;
+  }
+}
+@media (max-width: 750px) {
+  .ubicacion .ubicacion-item {
+    margin-left: 2rem;
+  }
+  .ubicacion .ubicacion-item2 {
+    margin-left: 2rem;
+  }
+  .ubicacion .ubicacion-item3 {
+    margin-left: 20rem;
+  }
+}
+@media (max-width: 725px) {
+  .ubicacion .ubicacion-item {
+    font-size: 3rem;
+  }
+  .ubicacion .ubicacion-item3 {
+    margin-left: 2rem;
+    font-size: 1.2rem;
+  }
+}
+@media (max-width: 500px) {
+  .ubicacion .ubicacion-item {
+    font-size: 2rem;
+  }
+  .ubicacion .ubicacion-item2 {
+    font-size: 0.8rem;
+    margin-top: 1.5rem;
+  }
+  .ubicacion .ubicacion-item3 {
+    margin-top: -1rem;
+  }
+  .ubicacion .ubicacion-item4 {
+    height: 100%;
+    width: 100%;
+    margin-top: -3rem;
+  }
+  .pieubicacion {
+    margin-top: -4rem;
+  }
+}
+/*responsive página contacto*/
+@media (max-width: 2500px) {
+  .mb-3 {
+    margin-left: 5rem;
+  }
+  .form-label, .form-label2, .form-label3 {
+    font-size: 2rem;
+  }
+  #exampleFormControlInput1 {
+    width: 30rem;
+  }
+  #exampleFormControlTextarea1 {
+    width: 30rem;
+  }
+  .contactoenviar {
+    margin-left: 5rem;
+  }
+}
+@media (max-width: 700px) {
+  .mb-3 {
+    margin-right: 1rem;
+    margin-left: 1rem;
+  }
+  .titulo-5 {
+    font-size: 3rem;
+    margin-left: 1rem;
+  }
+  .form-label, .form-label2, .form-label3 {
+    font-size: 1.3rem;
+  }
+  .contactoenviar {
     margin-left: 1rem;
   }
 }
-@media (max-width: 390px) {
-  .titulorama {
-    font-size: 2.6rem;
-    margin-left: 0;
+@media (max-width: 540px) {
+  #exampleFormControlInput1 {
+    width: 25rem;
   }
-  .ramatexto {
-    font-size: 1.3rem;
-    margin-left: 0;
+  #exampleFormControlTextarea1 {
+    width: 25rem;
   }
-  .text-center {
-    margin-left: -10rem;
+}
+@media (max-width: 480px) {
+  #exampleFormControlInput1 {
+    width: 20rem;
+  }
+  #exampleFormControlTextarea1 {
+    width: 20rem;
+  }
+}
+@media (max-width: 350px) {
+  #exampleFormControlInput1 {
+    width: 15rem;
+  }
+  #exampleFormControlTextarea1 {
+    width: 15rem;
+  }
+}
+@media (max-width: 270px) {
+  .mb-3 {
+    margin-left: 0.3rem;
+  }
+  .titulo-5 {
+    font-size: 2rem;
+    margin-left: 0.8rem;
+  }
+  .form-label, .form-label2, .form-label3 {
+    font-size: 0.8rem;
   }
 }
 

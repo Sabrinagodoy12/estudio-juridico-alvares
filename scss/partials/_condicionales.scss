@@ -1,10 +1,14 @@
-$temporada:"navidad";
+$temporada:"";
 
 /*condicionales*/
 @if ($temporada == "navidad"){
-   
-    
-
-}@else if ($temporada == "enero"){
-
+    .navbar{
+        background-image: url(../img/brillonavidad.png);
+    }
+   }
+@else{
+    .navbar{
+        background-color: $color-resaltar ;
+    }
 }
+
