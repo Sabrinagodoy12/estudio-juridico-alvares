@@ -283,7 +283,18 @@ footer{
     }
 }
 
-@media (max-width:750px){
+@media (max-width:1700px){
+.ramas{
+    margin-right: 0;
+    margin-left: 2rem;
+    .rama1{
+        margin-right: 1rem;
+        margin-left: 1rem;
+    }
+}
+}
+
+@media (max-width:1500px){
     .titulo-5{
         font-size: 4rem;
         margin-left: 0.5rem;
@@ -293,29 +304,46 @@ footer{
     font-size: 1.5rem;
     margin-left: 0.5rem;
    }
+.ramas{
+    margin: 0;
 
-   .sacatuturno{
-    margin-left: 0;
-
-   }
+    .rama1{
+        .sacatuturno{
+            margin-left: 0;
+        
+           }
+    }
+    
+}
+  
 }
 @media (max-width:720px){
+    .ramas{
+        margin: 0;
+        .rama1{
+
+        }
+    }
     .piemasarriba{
         height: 25rem;
     }
 }
 
 @media (max-width:550px){
-    
-    .rama1{
-        margin-left: 1rem;
-        width: 25rem;
-        height: 12rem;
+    .ramas{
+        margin: 0;
 
-        h3{
-            font-size: 1.5rem;
+        .rama1{
+            margin-left: 1rem;
+            width: 25rem;
+            height: 12rem;
+    
+            h3{
+                font-size: 1.5rem;
+            }
         }
     }
+   
 }
 
 @media (max-width:480px){
