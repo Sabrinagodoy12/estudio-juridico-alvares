@@ -34,7 +34,7 @@ width: 100%;
 
 @media (max-width:720px){
 footer{
-  height: 15rem;
+  height: 25rem;
     .pietexto{
         margin-left: 1rem;
     }
@@ -49,7 +49,7 @@ footer{
      .pieiconomobile{
         display:block;
         margin-top: 0;
-        margin-left: 1rem;
+       
 
 .instagrammobile{
     width: 2rem;
@@ -238,6 +238,10 @@ footer{
 
 @media (max-width:405px){
 .todoinicio{
+    .titulo-7{
+        margin-right: 0;
+        margin-top: 3rem;
+      }
     .botones{
       .boton{
         width: 8rem;
@@ -248,15 +252,17 @@ footer{
         margin-left: 10rem;
        
     }
-    .titulo-7{
-      margin-right: 0;
-    }
+   .nosotros{
+    margin-left: 1rem;
+   }
     .somos{
-        margin-right: 0;
+        margin-right: 2rem;
+        margin-left: 1rem;
     }
     .matriculatexto{
         font-size: 1rem;
         margin-right: 0;
+        margin-left: 1rem;
     }
 }
 }
@@ -286,43 +292,40 @@ footer{
 @media (max-width:1700px){
 .ramas{
     margin-right: 0;
-    margin-left: 2rem;
+    margin-left: 0;
     .rama1{
         margin-right: 1rem;
-        margin-left: 1rem;
+        margin-left: 4rem;
     }
 }
 }
 
 @media (max-width:1500px){
+    .ramas{
     .titulo-5{
         font-size: 4rem;
-        margin-left: 0.5rem;
+        margin-left: 3rem;
+        margin-right: 3rem;
 
     }
-   section .ramatexto{
+    .ramatexto{
+        margin-top: 3rem;
     font-size: 1.5rem;
     margin-left: 0.5rem;
    }
+}
+}
+@media (max-width:970px){
 .ramas{
-    margin: 0;
-
-    .rama1{
-        .sacatuturno{
-            margin-left: 0;
-        
-           }
+    .ramatexto{
+        margin-left: 4rem;
     }
-    
 }
-  
 }
+
 @media (max-width:720px){
     .ramas{
         margin: 0;
-        .rama1{
-
-        }
     }
     .piemasarriba{
         height: 25rem;
@@ -332,6 +335,15 @@ footer{
 @media (max-width:550px){
     .ramas{
         margin: 0;
+        .tituloramas{
+            margin-left: 1rem;
+            font-size: 3rem;
+            margin-top: 3rem;
+        }
+        .ramatexto{
+            margin-left: 1rem;
+
+        }
 
         .rama1{
             margin-left: 1rem;
@@ -340,22 +352,42 @@ footer{
     
             h3{
                 font-size: 1.5rem;
+
             }
         }
     }
-   
 }
 
-@media (max-width:480px){
 
-.ramatexto{
-    font-size: 1rem;
+@media (max-width:425px){
+.ramas{
+    .tituloramas{
+        font-size: 2.5rem;
+    }
+    .ramatexto{
+      font-size: 1rem;
+      margin-top: 1rem;
+    }
+    
+        .rama1{
+            margin-left: 1rem;
+            width: 20rem;
+            height: 12rem;
+        }
 }
 
-    .rama1{
-        margin-left: 1rem;
-        width: 20rem;
-        height: 12rem;
+}
+
+@media (max-width:350px){
+    .ramas{
+        .tituloramas{
+            font-size: 2rem;
+        }
+        .rama1{
+            margin-left: 1.5rem;
+            width: 16rem;
+          
+        }
     }
 }
 
@@ -494,18 +526,25 @@ margin-left: 2rem;
     }
 }
 @media (max-width:350px){
+.turnos{
+    .tituloturno{
+        margin-left: 1rem;
+    }
+    .textoturno{
+        margin-left: 1rem;
+    }
+}
     .formularios{
-        
         .bsformulario{
-        margin-left: 2.5rem;
+        margin-left: 1rem;
         }
         .formulario1{
-            margin-left: 2.5rem;
+            margin-left: 1rem;
             width: 17rem;
         }
         .informacion{
             font-size: 1.2rem;
-            margin-left: 2rem;
+            margin-left: 0.5rem;
             #rama, #cel, #nombre{
                 width: 17rem;
                 margin-left: 0.5rem;
@@ -518,7 +557,7 @@ margin-left: 2rem;
                 margin-left: 0.5rem;
             }
             .enviarturno{
-                margin-left: 8rem;
+                margin-left: 7.5rem;
             }
         }
     }
@@ -527,145 +566,156 @@ margin-left: 2rem;
 /*responsive página ubicación*/
 
 @media (max-width:1580px){
-.ubicacion{
-    .ubicacion-item2{
-        margin-top: 7rem;
-        margin-left: 5rem;
-      grid-column: 1/4;
-    }
-    .ubicacion-item3{
-        grid-column: 3/5;
-        margin-left: 20rem;
-    }
-}
-}
-
-@media (max-width:1140px){
     .ubicacion{
         .ubicacion-item2{
-          font-size: 1.5rem;
+            margin-top: 7rem;
+            margin-left: 5rem;
+          grid-column: 1/4;
         }
         .ubicacion-item3{
-            margin-left: 25rem;
-           grid-column: 2/5;
-        }
-    }
-}
-
-@media (max-width:850px){
-    .ubicacion{
-        .ubicacion-item{
-            font-size: 4rem;
-        }
-        .ubicacion-item2{
-            margin-top: 4rem;
-          font-size: 1.3rem;
-          grid-column: 1/5;
-        }
-        .ubicacion-item3{
-            margin-top: 5rem;
-           grid-column: 1/5;
-        }
-        .ubicacion-item4{
-            margin-top: 2.5rem;
-            padding: 2rem;
-        }
-    }
-} 
-
-@media (max-width:750px){
-    .ubicacion{
-        .ubicacion-item{
-            margin-left: 2rem;
-        }
-        .ubicacion-item2{
-            margin-left: 2rem;
-        }
-        .ubicacion-item3{
+            grid-column: 3/5;
             margin-left: 20rem;
         }
-        .ubicacion-item4{
-          
+    }
+    }
+    
+    @media (max-width:1140px){
+        .ubicacion{
+            .ubicacion-item2{
+              font-size: 1.5rem;
+            }
+            .ubicacion-item3{
+                margin-left: 25rem;
+               grid-column: 2/5;
+            }
         }
     }
-}
-
-@media (max-width:725px){
-.ubicacion{
-    .ubicacion-item{
-        font-size: 3rem;
+    
+    @media (max-width:850px){
+        .ubicacion{
+            .ubicacion-item{
+                font-size: 4rem;
+            }
+            .ubicacion-item2{
+                margin-top: 4rem;
+              font-size: 1.3rem;
+              grid-column: 1/5;
+            }
+            .ubicacion-item3{
+                margin-top: 5rem;
+               grid-column: 1/5;
+            }
+            .ubicacion-item4{
+                margin-top: 2.5rem;
+                padding: 2rem;
+            }
+        }
+    } 
+    
+    @media (max-width:750px){
+        .ubicacion{
+            .ubicacion-item{
+                margin-left: 2rem;
+            }
+            .ubicacion-item2{
+                margin-left: 2rem;
+            }
+            .ubicacion-item3{
+                margin-left: 20rem;
+            }
+            .ubicacion-item4{
+              
+            }
+        }
     }
-    .ubicacion-item3{
-        margin-left: 2rem;
-        font-size: 1.2rem;
-    }
-}
-}
-
-@media (max-width:500px){
+    
+    @media (max-width:725px){
     .ubicacion{
         .ubicacion-item{
-            font-size: 2rem;
-        }
-        .ubicacion-item2{
-            font-size: 0.8rem;
-            margin-top: 1.5rem;
+            font-size: 3rem;
         }
         .ubicacion-item3{
-            margin-top: -1rem;
-        }
-        .ubicacion-item4{
-            height: 100%;
-            width: 100%;
-            margin-top: -3rem;
+            margin-left: 2rem;
+            font-size: 1.2rem;
         }
     }
-    .pieubicacion{
-        margin-top: -4rem;
     }
-}
-
+    
+    @media (max-width:500px){
+        .ubicacion{
+            .ubicacion-item{
+                font-size: 2rem;
+            }
+            .ubicacion-item2{
+                font-size: 0.8rem;
+                margin-top: 1.5rem;
+            }
+            .ubicacion-item3{
+                margin-top: -1rem;
+            }
+            .ubicacion-item4{
+                height: 100%;
+                width: 100%;
+                margin-top: -3rem;
+            }
+        }
+        .pieubicacion{
+            margin-top: -4rem;
+        }
+    }
 
 /*responsive página contacto*/
-
 @media (max-width:2500px){
     .mb-3{
+        .form-label, .form-label2, .form-label3{
+            font-size: 2rem;
+            margin-left: 5rem;
+         
+        }
+        #exampleFormControlInput1, #exampleFormControlInput2{
+            width: 30rem;
+            margin-left: 5rem;
+            }
+        
+            #exampleFormControlTextarea1{
+                width: 30rem;
+                margin-left: 5rem;
+            }
+    }
+
+    .enviar{
         margin-left: 5rem;
     }
-    .form-label, .form-label2, .form-label3{
-    font-size: 2rem;
- 
 }
 
 
-#exampleFormControlInput1{
-    width: 30rem;
-    }
-
-    #exampleFormControlTextarea1{
-        width: 30rem;
-    }
-    .contactoenviar{
-        margin-left: 5rem;
-    }
-}
 
 @media (max-width:700px){
 
 .mb-3{
-margin-right: 1rem;
-margin-left: 1rem;
+
+.form-label, .form-label2, .form-label3{
+    font-size: 1.3rem;
+    margin-left: 1rem;
+    }
+    #exampleFormControlInput1, #exampleFormControlInput2{
+      
+        margin-left: 1rem;
+        }
+    
+        #exampleFormControlTextarea1{
+           
+            margin-left: 1rem;
+        }
 }
 
 .titulo-5{
 font-size: 3rem;
-margin-left: 1rem;
+
 }
 
-.form-label, .form-label2, .form-label3{
-font-size: 1.3rem;
-}
-.contactoenviar{
+
+.enviar{
     margin-left: 1rem;
 }
 
@@ -674,44 +724,52 @@ font-size: 1.3rem;
 
 @media (max-width:540px){
 
-#exampleFormControlInput1{
-    width: 25rem;
-}
-    #exampleFormControlTextarea1{
+.mb-3{
+    #exampleFormControlInput1, #exampleFormControlInput2{
         width: 25rem;
     }
+        #exampleFormControlTextarea1{
+            width: 25rem;
+        }
+    }
 }
+
 
 @media (max-width:480px){
-    #exampleFormControlInput1{
-        width: 20rem;
-    }
-        #exampleFormControlTextarea1{
+    .mb-3{
+        #exampleFormControlInput1, #exampleFormControlInput2{
             width: 20rem;
         }
-}
+            #exampleFormControlTextarea1{
+                width: 20rem;
+            }
+    }
+    }
+
 
 @media (max-width:350px){
-    #exampleFormControlInput1{
-        width: 15rem;
-    }
-        #exampleFormControlTextarea1{
+    .mb-3{
+        #exampleFormControlInput1, #exampleFormControlInput2{
             width: 15rem;
         }
-}
+            #exampleFormControlTextarea1{
+                width: 15rem;
+
+            }
+    }
+    }
+
 
 @media (max-width:270px){
     .mb-3{
         margin-left: 0.3rem;
     }
-    .titulo-5{
-        font-size: 2rem;
-        margin-left: 0.8rem;
-    }
+ 
     .form-label, .form-label2, .form-label3{
         font-size: 0.8rem;
         }
 }
+
 
 
     

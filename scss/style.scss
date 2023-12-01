@@ -188,24 +188,21 @@ footer{
 .ramas{
     background: none;
     background-size: cover;
-   margin-top: 4rem;
-   margin-right: -5rem;
-  
+   margin-top: 3rem;
+
    .destacado{
     font-weight: 600;
 }
     .titulo-5{
         margin-top: 1rem;
-        margin-left: 1rem;
     }
     .rama1{
-
+     
         color: $color-texto;
         border: $color-resaltar 3px solid;
         border-radius: 5%;
         margin: 5rem;
         transition: all .5s;
-      
         &:hover{
             transform: scale(1.05);
         }
@@ -372,36 +369,38 @@ footer{
 
 /*Página Contacto*/
 
-.contacto{
-    .mb-3{
-        margin-top: 2rem;
-
-        .form-label, .form-label2, .form-label3{
-            color: $color-texto;
-        }
-            
-            #exampleFormControlTextarea1{
-                height: 15rem;
-            }
-    }
-
-    .enviar{
-        color: #7C2343;
-        background-color: $color-resaltar;
-        border-color: $color-texto;
-        border-radius: solid 1px;
-        font-family: 'Bitter', serif;
-        font-size: 1rem;
-        font-weight: 700;
-        width: 10rem;
-
-        &:hover{
-            background-color: $color-resaltar;
-            color: $color-texto;
-        }
-     }
+    .contacto{
+.titulo-5{
+    margin-left: 0;
 }
-
+        .mb-3{
+            margin-top: 2rem;
+    
+            .form-label, .form-label2, .form-label3{
+                color: $color-texto;
+            }
+                
+                #exampleFormControlTextarea1{
+                    height: 15rem;
+                }
+        }
+    
+        .enviar{
+            color: #7C2343;
+            background-color: $color-resaltar;
+            border-color: $color-texto;
+            border-radius: solid 1px;
+            font-family: 'Bitter', serif;
+            font-size: 1rem;
+            font-weight: 700;
+            width: 10rem;
+    
+            &:hover{
+                background-color: $color-resaltar;
+                color: $color-texto;
+            }
+         }
+    }
 /*todos los botones*/
 .boton{
     border-radius: 1rem;
