@@ -133,6 +133,9 @@ h4{
     margin-top: -30rem;
     margin-left: 60rem;
 }
+.balanzadivide{
+    display: none;
+}
 
 }
 
@@ -252,6 +255,7 @@ footer{
         margin-right: 15rem;
         margin-left: 10rem;
     }
+  
 }
 
 .formularios{
@@ -321,6 +325,10 @@ footer{
     color: $color-texto;
             }
         }
+    }
+    .imagenconcliente{
+        margin-top: -35rem;
+       margin-left: 55rem;
     }
 }
 
@@ -400,7 +408,27 @@ footer{
                 color: $color-texto;
             }
          }
-    }
+         section{
+           .imagenconcliente{
+           margin-top: -50rem;
+           margin-right: 0;
+           }
+         }
+       .textocontacto{
+        margin-left: 60rem;
+        margin-top: -35rem;
+        margin-right: 20rem;
+       }
+       .textocontactoresalta{
+        color: $color-resaltar;
+        margin-left: 60rem;
+        margin-right: 20rem;
+        margin-top: 5rem;
+        font-weight: 600;
+       }
+        }
+         
+    
 /*todos los botones*/
 .boton{
     border-radius: 1rem;

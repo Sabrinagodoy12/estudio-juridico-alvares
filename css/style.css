@@ -148,6 +148,9 @@ span::selection {
   margin-top: -30rem;
   margin-left: 60rem;
 }
+.todoinicio .balanzadivide {
+  display: none;
+}
 
 /*footer*/
 footer {
@@ -309,6 +312,10 @@ footer .pieiconomobile {
   background-color: #F6975F;
   color: #F1E7C4;
 }
+.formularios .imagenconcliente {
+  margin-top: -35rem;
+  margin-left: 55rem;
+}
 
 /*Página ubicación*/
 .ubicacion {
@@ -368,6 +375,22 @@ footer .pieiconomobile {
 .contacto .enviar:hover {
   background-color: #F6975F;
   color: #F1E7C4;
+}
+.contacto section .imagenconcliente {
+  margin-top: -50rem;
+  margin-right: 0;
+}
+.contacto .textocontacto {
+  margin-left: 60rem;
+  margin-top: -35rem;
+  margin-right: 20rem;
+}
+.contacto .textocontactoresalta {
+  color: #F6975F;
+  margin-left: 60rem;
+  margin-right: 20rem;
+  margin-top: 5rem;
+  font-weight: 600;
 }
 
 /*todos los botones*/
@@ -617,6 +640,7 @@ footer .pieiconomobile {
     margin-left: 10rem;
   }
   .todoinicio .nosotros {
+    margin-top: 5rem;
     margin-left: 1rem;
   }
   .todoinicio .somos {
@@ -625,8 +649,21 @@ footer .pieiconomobile {
   }
   .todoinicio .matriculatexto {
     font-size: 1rem;
-    margin-right: 0;
+    margin-right: 1rem;
     margin-left: 1rem;
+  }
+  .todoinicio .balanzadivide {
+    display: block;
+    width: 300px;
+    height: 50px;
+    margin-top: 10rem;
+    margin-left: 2rem;
+  }
+}
+@media (max-width: 340px) {
+  .todoinicio .balanzadivide {
+    margin-left: 0.5rem;
+    margin-right: 0;
   }
 }
 /*responsive página especialidades*/
@@ -727,6 +764,11 @@ footer .pieiconomobile {
   }
 }
 /*responsive página turnos*/
+@media (max-width: 1630px) {
+  .formularios .imagenconcliente {
+    margin-left: 35rem;
+  }
+}
 @media (max-width: 1500px) {
   .turnos .textoturno {
     margin-left: 15rem;
@@ -738,6 +780,11 @@ footer .pieiconomobile {
   }
   .formularios .informacion .enviarturno {
     margin-left: 22rem;
+  }
+}
+@media (max-width: 1300px) {
+  .formularios .imagenconcliente {
+    display: none;
   }
 }
 @media (max-width: 1080px) {
@@ -963,6 +1010,24 @@ footer .pieiconomobile {
   }
   .enviar {
     margin-left: 5rem;
+  }
+}
+@media (max-width: 1650px) {
+  .contacto .textocontacto {
+    margin-right: 5rem;
+    margin-left: 50rem;
+  }
+  .contacto .textocontactoresalta {
+    margin-right: 5rem;
+    margin-left: 50rem;
+  }
+}
+@media (max-width: 1250px) {
+  .contacto .textocontacto {
+    display: none;
+  }
+  .contacto .textocontactoresalta {
+    display: none;
   }
 }
 @media (max-width: 700px) {
