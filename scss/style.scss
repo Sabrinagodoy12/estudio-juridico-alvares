@@ -139,6 +139,74 @@ h4{
 
 }
 
+/*error 404*/
+.bodyerror{
+    height: 100vh;
+
+
+    .signodeexclamacion{
+        margin-top: 5rem;
+       margin-left: 47%;
+    }
+        .error404{
+            font-size: 20rem;
+            text-align: center;
+            margin-top: 1rem;
+        }
+        .textoinformativo{
+            font-size: 2rem;
+            color: $color-resaltar;
+            font-weight: 600;
+            text-align: center;
+           
+        }
+        .textoexplicacion{
+            font-size: 1rem;
+            color: $color-texto;
+            text-align: center;
+            margin-top: 1rem;
+        }
+        .botonparainicio{
+            margin-left: 42%;
+            margin-top: 3rem;
+            border-radius: 1rem;
+            font-size: 1.8rem;
+            border: 2px solid $color-texto;
+            background: $color-resaltar;
+            position: absolute;
+          text-align: center;
+          padding: 25px;
+            width: 18rem;
+            height: 6rem;
+            color: #7C2343;
+            cursor: pointer;
+            transition: all .5s;
+            
+    &::after{
+        position: absolute;
+        top: 0px;
+        left: 0px;
+        content: '';
+        height: 100%;
+        width: 100%;
+        background-image: #fc4a1a;  /* fallback for old browsers */
+        background: -webkit-linear-gradient(to right, #f7b733, #fc4a1a);  /* Chrome 10-25, Safari 5.1-6 */
+        background: linear-gradient(to right, #f7b733, #fc4a1a); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+        ;
+        filter: blur(15px);
+        z-index: -1;
+       
+    }
+    &:hover{
+        background-color: $color-resaltar;
+        color: $color-texto;
+        transform: scale(1.1);
+    }
+        }
+    
+}
+
+
 /*footer*/
 
 footer{
@@ -480,6 +548,7 @@ footer{
     padding: 10px 10px;
     text-align: center;
 }
+
 
 
 

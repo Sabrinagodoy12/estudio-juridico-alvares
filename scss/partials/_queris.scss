@@ -824,5 +824,60 @@ font-size: 3rem;
 }
 
 
+/*Responsive página error 404*/
+@media (max-width:900px){
+    .bodyerror{
+        .signodeexclamacion{
+            margin-left: 40%;
+        }
+        .botonparainicio{
+            margin-left: 30%;
+        }
+    }
+}
 
-    
+@media (max-width:600px){
+.bodyerror{
+    .signodeexclamacion{
+        margin-left: 30%;
+    }
+        .error404{
+            font-size: 12rem;
+        }
+        .textoinformativo{
+            font-size: 1.5rem;
+            
+           
+        }
+       
+        .botonparainicio{
+width: 15rem;
+height: 5rem;
+font-size: 1.5rem;
+margin-left: 20%;
+        }
+}
+}
+
+@media (max-width:360px){
+    .bodyerror{
+        .signodeexclamacion{
+           width: 100px;
+           height: 100px;
+           margin-left: 8rem;
+        }
+            .error404{
+                font-size: 10rem;
+            }
+           .textoexplicacion{
+            margin: 1rem;
+            margin-top: 2rem;
+           }
+            .botonparainicio{
+    width: 15rem;
+    height: 5rem;
+    font-size: 1.5rem;
+    margin-left: 15%;
+            }
+    }
+}

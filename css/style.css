@@ -152,6 +152,66 @@ span::selection {
   display: none;
 }
 
+/*error 404*/
+.bodyerror {
+  height: 100vh;
+}
+.bodyerror .signodeexclamacion {
+  margin-top: 5rem;
+  margin-left: 47%;
+}
+.bodyerror .error404 {
+  font-size: 20rem;
+  text-align: center;
+  margin-top: 1rem;
+}
+.bodyerror .textoinformativo {
+  font-size: 2rem;
+  color: #F6975F;
+  font-weight: 600;
+  text-align: center;
+}
+.bodyerror .textoexplicacion {
+  font-size: 1rem;
+  color: #F1E7C4;
+  text-align: center;
+  margin-top: 1rem;
+}
+.bodyerror .botonparainicio {
+  margin-left: 42%;
+  margin-top: 3rem;
+  border-radius: 1rem;
+  font-size: 1.8rem;
+  border: 2px solid #F1E7C4;
+  background: #F6975F;
+  position: absolute;
+  text-align: center;
+  padding: 25px;
+  width: 18rem;
+  height: 6rem;
+  color: #7C2343;
+  cursor: pointer;
+  transition: all 0.5s;
+}
+.bodyerror .botonparainicio::after {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  content: "";
+  height: 100%;
+  width: 100%;
+  background-image: #fc4a1a; /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #f7b733, #fc4a1a); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #f7b733, #fc4a1a); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  filter: blur(15px);
+  z-index: -1;
+}
+.bodyerror .botonparainicio:hover {
+  background-color: #F6975F;
+  color: #F1E7C4;
+  transform: scale(1.1);
+}
+
 /*footer*/
 footer {
   color: #7C2343;
@@ -1078,6 +1138,52 @@ footer .pieiconomobile {
   }
   .form-label, .form-label2, .form-label3 {
     font-size: 0.8rem;
+  }
+}
+/*Responsive página error 404*/
+@media (max-width: 900px) {
+  .bodyerror .signodeexclamacion {
+    margin-left: 40%;
+  }
+  .bodyerror .botonparainicio {
+    margin-left: 30%;
+  }
+}
+@media (max-width: 600px) {
+  .bodyerror .signodeexclamacion {
+    margin-left: 30%;
+  }
+  .bodyerror .error404 {
+    font-size: 12rem;
+  }
+  .bodyerror .textoinformativo {
+    font-size: 1.5rem;
+  }
+  .bodyerror .botonparainicio {
+    width: 15rem;
+    height: 5rem;
+    font-size: 1.5rem;
+    margin-left: 20%;
+  }
+}
+@media (max-width: 360px) {
+  .bodyerror .signodeexclamacion {
+    width: 100px;
+    height: 100px;
+    margin-left: 8rem;
+  }
+  .bodyerror .error404 {
+    font-size: 10rem;
+  }
+  .bodyerror .textoexplicacion {
+    margin: 1rem;
+    margin-top: 2rem;
+  }
+  .bodyerror .botonparainicio {
+    width: 15rem;
+    height: 5rem;
+    font-size: 1.5rem;
+    margin-left: 15%;
   }
 }
 
