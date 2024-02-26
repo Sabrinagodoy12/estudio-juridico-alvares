@@ -73,6 +73,10 @@ span::selection{
             color: #7C2343
         }
         .navbar-brand{
+            .logoestudio{
+                width: 3.5rem;
+                height: 3.5rem;
+            }
             &:hover{
                 color: $color-texto;
             }
@@ -109,7 +113,7 @@ p{
     font-size: 2rem;
 }
 .nosotros{
-    margin-top: -30rem;
+    margin-top: -40rem;
 }
 
 .somos, #texto{
@@ -142,8 +146,6 @@ h4{
 /*error 404*/
 .bodyerror{
     height: 100vh;
-
-
     .signodeexclamacion{
         margin-top: 5rem;
        margin-left: 47%;
@@ -312,94 +314,6 @@ footer{
     }
 }
 
-/*Página turnos*/ 
-
-.turnos{
-    display: flex;
-    flex-direction: row;
-
-    .textoturno{
-        margin-top: 6rem;
-        margin-right: 15rem;
-        margin-left: 10rem;
-    }
-  
-}
-
-.formularios{
-    .bsformulario{
-        color: $color-resaltar;
-        margin-left: 5rem;
-        margin-top: 3rem;
-        font-size: 2rem;
-
-    }
-    
-    .formulario1{
-        width: 30rem;
-        height: 2rem;
-        margin-left: 5rem;
-        font-size: 1rem;
-    } 
-    .informacion{
-        display: flex;
-        flex-direction: column;
-        color: $color-resaltar;
-       margin-left: 3rem;
-        font-size: 2rem;
-
-        label{
-            margin-top: 2rem;
-            margin-left: 2rem;
-        }
-        input{
-            margin-left: 2rem;
-        }
-        
-        #rama, #cel, #nombre{
-            width: 30rem;
-            height: 2rem;
-            font-family: 'Bitter', serif; 
-            border-radius: solid 2px;
-            font-size: 1rem;
-        }
-        
-        #turno{
-            width: 30rem;
-            height: 5rem;
-            font-size: 1rem;
-            margin-left: 47rem;
-            
-        }
-        .turnonombre{
-            margin-top: 2rem;
-        }
-    
-        .enviarturno{
-            width: 10rem;
-            height: 2rem;
-            color: #7C2343;
-            background-color: $color-resaltar;
-            border-color: $color-texto;
-            border-radius: solid 1px;
-            font-family: 'Bitter', serif;
-            font-size: 1rem;
-            font-weight: 700;
-            margin-top: 1rem;
-            margin-left: 67rem;
-
-            &:hover{
-                background-color: $color-resaltar;
-    color: $color-texto;
-            }
-        }
-    }
-    .imagenconcliente{
-        margin-top: -35rem;
-       margin-left: 55rem;
-    }
-}
-
 /*Página ubicación*/
 
 .ubicacion{
@@ -443,60 +357,6 @@ footer{
     }
 }
 
-/*Página Contacto*/
-
-    .contacto{
-.titulo-5{
-    margin-left: 0;
-}
-        .mb-3{
-            margin-top: 2rem;
-    
-            .form-label, .form-label2, .form-label3{
-                color: $color-texto;
-            }
-                
-                #exampleFormControlTextarea1{
-                    height: 15rem;
-                }
-        }
-    
-        .enviar{
-            color: #7C2343;
-            background-color: $color-resaltar;
-            border-color: $color-texto;
-            border-radius: solid 1px;
-            font-family: 'Bitter', serif;
-            font-size: 1rem;
-            font-weight: 700;
-            width: 10rem;
-    
-            &:hover{
-                background-color: $color-resaltar;
-                color: $color-texto;
-            }
-         }
-         section{
-           .imagenconcliente{
-           margin-top: -50rem;
-           margin-right: 0;
-           }
-         }
-       .textocontacto{
-        margin-left: 60rem;
-        margin-top: -35rem;
-        margin-right: 20rem;
-       }
-       .textocontactoresalta{
-        color: $color-resaltar;
-        margin-left: 60rem;
-        margin-right: 20rem;
-        margin-top: 5rem;
-        font-weight: 600;
-       }
-        }
-         
-    
 /*todos los botones*/
 .boton{
     border-radius: 1rem;
@@ -504,7 +364,7 @@ footer{
     border: 2px solid $color-texto;
     background: $color-resaltar;
     position: absolute;
-    margin: 5% 5% 0% 5%;
+    margin: 4% 5% 0% 5%;
     padding: 20px 50px;
     width: 18rem;
     height: 6rem;
@@ -534,17 +394,11 @@ footer{
     }
 }
 
-.botonturnos{
-    @extend .boton;
-    margin: 5% 20% 0% 25%;
-     padding: 20px 20px;
-   
-}
 
 .botonconoce{
     @extend .boton;
     font-size: 1.7rem;
-    margin: 2% 40% 0% 30%;
+    margin: 2% 40% 0% 5%;
     padding: 10px 10px;
     text-align: center;
 }
